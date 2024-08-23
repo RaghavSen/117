@@ -20,7 +20,7 @@ size = (width,height)
 
 output = cv2.VideoWriter('117.mp4',cv2.VideoWriter_fourcc(*'DIVX'),0.8,size)
 
-for i in range(count-1,0,1):
+for i in range(count-1, -1, -1):
     frame = cv2.imread(images[i])
     output.write(frame)
 
